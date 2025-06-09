@@ -1,0 +1,410 @@
+Initialized wandb run: basic_ttt_20250608_235426
+Output directory: ttt_experiments/basic_ttt_20250608_235428
+Neural data loader initialized with 1280 features
+Data loader setup with 1280 features
+Model setup: TTT_RNN created (will build on first forward pass)
+Starting training...
+Loading neural data...
+Found 24 .mat files
+Loading sentences/t12.2022.04.28_sentences.mat...
+Processing 300 sentences from t12.2022.04.28_sentences.mat
+Successfully processed 262 sentences from t12.2022.04.28_sentences.mat
+Loading sentences/t12.2022.05.05_sentences.mat...
+Processing 380 sentences from t12.2022.05.05_sentences.mat
+Successfully processed 372 sentences from t12.2022.05.05_sentences.mat
+Loading sentences/t12.2022.05.17_sentences.mat...
+Processing 490 sentences from t12.2022.05.17_sentences.mat
+Successfully processed 490 sentences from t12.2022.05.17_sentences.mat
+Loading sentences/t12.2022.05.19_sentences.mat...
+Processing 250 sentences from t12.2022.05.19_sentences.mat
+Successfully processed 250 sentences from t12.2022.05.19_sentences.mat
+Loading sentences/t12.2022.05.24_sentences.mat...
+Processing 475 sentences from t12.2022.05.24_sentences.mat
+Successfully processed 474 sentences from t12.2022.05.24_sentences.mat
+Loading sentences/t12.2022.05.26_sentences.mat...
+Processing 450 sentences from t12.2022.05.26_sentences.mat
+Successfully processed 450 sentences from t12.2022.05.26_sentences.mat
+Loading sentences/t12.2022.06.02_sentences.mat...
+Processing 515 sentences from t12.2022.06.02_sentences.mat
+Successfully processed 515 sentences from t12.2022.06.02_sentences.mat
+Loading sentences/t12.2022.06.07_sentences.mat...
+Processing 490 sentences from t12.2022.06.07_sentences.mat
+Successfully processed 489 sentences from t12.2022.06.07_sentences.mat
+Loading sentences/t12.2022.06.14_sentences.mat...
+Processing 450 sentences from t12.2022.06.14_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.14_sentences.mat
+Loading sentences/t12.2022.06.16_sentences.mat...
+Processing 450 sentences from t12.2022.06.16_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.16_sentences.mat
+Loading sentences/t12.2022.06.21_sentences.mat...
+Processing 410 sentences from t12.2022.06.21_sentences.mat
+Successfully processed 410 sentences from t12.2022.06.21_sentences.mat
+Loading sentences/t12.2022.06.23_sentences.mat...
+Processing 570 sentences from t12.2022.06.23_sentences.mat
+Successfully processed 570 sentences from t12.2022.06.23_sentences.mat
+Loading sentences/t12.2022.06.28_sentences.mat...
+Processing 450 sentences from t12.2022.06.28_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.28_sentences.mat
+Loading sentences/t12.2022.07.05_sentences.mat...
+Processing 450 sentences from t12.2022.07.05_sentences.mat
+Successfully processed 450 sentences from t12.2022.07.05_sentences.mat
+Loading sentences/t12.2022.07.14_sentences.mat...
+Processing 490 sentences from t12.2022.07.14_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.14_sentences.mat
+Loading sentences/t12.2022.07.21_sentences.mat...
+Processing 490 sentences from t12.2022.07.21_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.21_sentences.mat
+Loading sentences/t12.2022.07.27_sentences.mat...
+Processing 490 sentences from t12.2022.07.27_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.27_sentences.mat
+Loading sentences/t12.2022.07.29_sentences.mat...
+Processing 240 sentences from t12.2022.07.29_sentences.mat
+Successfully processed 240 sentences from t12.2022.07.29_sentences.mat
+Loading sentences/t12.2022.08.02_sentences.mat...
+Processing 490 sentences from t12.2022.08.02_sentences.mat
+Successfully processed 490 sentences from t12.2022.08.02_sentences.mat
+Loading sentences/t12.2022.08.11_sentences.mat...
+Processing 410 sentences from t12.2022.08.11_sentences.mat
+Successfully processed 410 sentences from t12.2022.08.11_sentences.mat
+Loading sentences/t12.2022.08.13_sentences.mat...
+Processing 410 sentences from t12.2022.08.13_sentences.mat
+Successfully processed 410 sentences from t12.2022.08.13_sentences.mat
+Loading sentences/t12.2022.08.18_sentences.mat...
+Error loading sentences/t12.2022.08.18_sentences.mat: Unable to synchronously open file (file signature not found)
+Loading sentences/t12.2022.08.23_sentences.mat...
+Processing 610 sentences from t12.2022.08.23_sentences.mat
+Successfully processed 610 sentences from t12.2022.08.23_sentences.mat
+Loading sentences/t12.2022.08.25_sentences.mat...
+Processing 610 sentences from t12.2022.08.25_sentences.mat
+Successfully processed 610 sentences from t12.2022.08.25_sentences.mat
+Loaded 10322 total sentences from 24 files
+Loaded 10322 sentences
+Average sentence length: 76.9 time steps
+Feature range: [0.000, 1879867264.000]
+Train: 8257 sentences, Val: 2065 sentences
+/nlp/scr/ethanhsu/miniconda3/envs/ttt_phoneme_env/lib/python3.9/site-packages/tensorflow/python/data/ops/structured_function.py:256: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Data loading complete!
+Could not count model parameters: Weights for model inner_encoder have not yet been created. Weights are created when the Model is first called on inputs or `build()` is called with an `input_shape`.
+
+Epoch 1/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...
+Initial validation - Loss: 2.2572, Acc: 0.5931
+  Batch 5: loss=1.1766, grad_norm=6.3760, lr=0.000100
+  Batch 10: loss=1.1341, grad_norm=7.7152, lr=0.000100
+  Batch 15: loss=0.8763, grad_norm=3.5849, lr=0.000100
+  Batch 20: loss=0.8109, grad_norm=1.7536, lr=0.000100
+  Batch 25: loss=1.0231, grad_norm=1.8701, lr=0.000100
+  Batch 30: loss=0.7698, grad_norm=1.2982, lr=0.000100
+  Batch 35: loss=0.6810, grad_norm=0.9018, lr=0.000100
+  Batch 40: loss=0.7988, grad_norm=1.1422, lr=0.000100
+  Batch 45: loss=0.6529, grad_norm=0.8485, lr=0.000100
+  Batch 50: loss=0.7354, grad_norm=1.2375, lr=0.000099
+  Batch 55: loss=0.8211, grad_norm=1.3660, lr=0.000099
+  Batch 60: loss=0.6369, grad_norm=4.1989, lr=0.000099
+  Batch 65: loss=0.6533, grad_norm=2.8232, lr=0.000099
+  Batch 70: loss=0.8720, grad_norm=0.5020, lr=0.000099
+  Batch 75: loss=0.7129, grad_norm=0.4050, lr=0.000099
+  Batch 80: loss=0.9363, grad_norm=0.9025, lr=0.000098
+  Batch 85: loss=0.7852, grad_norm=0.9279, lr=0.000098
+  Batch 90: loss=0.6695, grad_norm=0.6094, lr=0.000098
+  Batch 95: loss=0.6385, grad_norm=1.0849, lr=0.000098
+  Batch 100: loss=0.6296, grad_norm=2.2149, lr=0.000098
+  Batch 105: loss=0.8717, grad_norm=0.8615, lr=0.000097
+  Batch 110: loss=0.7446, grad_norm=0.3273, lr=0.000097
+  Batch 115: loss=0.7070, grad_norm=1.0756, lr=0.000097
+  Batch 120: loss=0.7301, grad_norm=0.7856, lr=0.000097
+  Batch 125: loss=0.8963, grad_norm=0.4832, lr=0.000096
+  Batch 130: loss=0.5568, grad_norm=2.5239, lr=0.000096
+  Batch 135: loss=0.6561, grad_norm=1.0320, lr=0.000096
+  Batch 140: loss=0.6899, grad_norm=1.2979, lr=0.000095
+  Batch 145: loss=0.7978, grad_norm=2.6747, lr=0.000095
+  Batch 150: loss=0.7002, grad_norm=0.9816, lr=0.000095
+  Batch 155: loss=0.6731, grad_norm=1.0427, lr=0.000094
+  Batch 160: loss=0.5283, grad_norm=0.4057, lr=0.000094
+  Batch 165: loss=0.7964, grad_norm=0.5431, lr=0.000094
+  Batch 170: loss=0.8097, grad_norm=0.6093, lr=0.000093
+  Batch 175: loss=0.7063, grad_norm=1.0082, lr=0.000093
+  Batch 180: loss=0.8054, grad_norm=0.9523, lr=0.000092
+  Batch 185: loss=0.8429, grad_norm=0.6173, lr=0.000092
+  Batch 190: loss=0.7044, grad_norm=0.6511, lr=0.000092
+  Batch 195: loss=0.7412, grad_norm=1.2267, lr=0.000091
+  Batch 200: loss=0.6738, grad_norm=1.8747, lr=0.000091
+  Batch 205: loss=0.8259, grad_norm=1.4745, lr=0.000090
+  Batch 210: loss=0.7870, grad_norm=0.8381, lr=0.000090
+  Batch 215: loss=0.8697, grad_norm=1.0500, lr=0.000089
+  Batch 220: loss=0.7750, grad_norm=0.7742, lr=0.000089
+  Batch 225: loss=0.8429, grad_norm=0.8058, lr=0.000088
+  Batch 230: loss=0.7010, grad_norm=0.9192, lr=0.000088
+  Batch 235: loss=0.6432, grad_norm=1.4812, lr=0.000087
+  Batch 240: loss=0.7712, grad_norm=4.2639, lr=0.000087
+  Batch 245: loss=0.7100, grad_norm=1.3543, lr=0.000086
+  Batch 250: loss=0.6808, grad_norm=0.6232, lr=0.000086
+  Batch 255: loss=0.6865, grad_norm=1.3933, lr=0.000085
+Validation...
+Epoch 1 completed in 1058.22s:
+  Train Loss: 0.7714, Train Acc: 0.7106
+  Val Loss: 0.7602, Val Acc: 0.7164
+  Learning Rate: 0.000085
+  New best validation loss: 0.7602
+  New best validation accuracy: 0.7164
+
+Epoch 2/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...
+Initial validation - Loss: 0.7587, Acc: 0.7106
+  Batch 5: loss=0.7125, grad_norm=0.5102, lr=0.000084
+  Batch 10: loss=0.7495, grad_norm=0.9096, lr=0.000083
+  Batch 15: loss=0.7607, grad_norm=0.6413, lr=0.000083
+  Batch 20: loss=0.8036, grad_norm=0.4319, lr=0.000082
+  Batch 25: loss=0.6096, grad_norm=0.2343, lr=0.000082
+  Batch 30: loss=0.6832, grad_norm=0.5560, lr=0.000081
+  Batch 35: loss=0.6688, grad_norm=0.6166, lr=0.000080
+  Batch 40: loss=0.7819, grad_norm=0.3937, lr=0.000080
+  Batch 45: loss=0.7300, grad_norm=0.4025, lr=0.000079
+  Batch 50: loss=0.6404, grad_norm=0.4130, lr=0.000079
+  Batch 55: loss=0.7422, grad_norm=0.7228, lr=0.000078
+  Batch 60: loss=0.5863, grad_norm=0.5459, lr=0.000077
+  Batch 65: loss=0.7050, grad_norm=0.5055, lr=0.000077
+  Batch 70: loss=0.5227, grad_norm=0.4975, lr=0.000076
+  Batch 75: loss=0.7622, grad_norm=0.4844, lr=0.000075
+  Batch 80: loss=0.6148, grad_norm=0.7275, lr=0.000075
+  Batch 85: loss=0.6932, grad_norm=0.3269, lr=0.000074
+  Batch 90: loss=0.6136, grad_norm=0.3508, lr=0.000073
+  Batch 95: loss=0.7444, grad_norm=0.3390, lr=0.000073
+  Batch 100: loss=0.5802, grad_norm=0.4776, lr=0.000072
+  Batch 105: loss=0.6014, grad_norm=0.4093, lr=0.000071
+  Batch 110: loss=0.5630, grad_norm=2.2005, lr=0.000070
+  Batch 115: loss=0.7320, grad_norm=0.7242, lr=0.000070
+  Batch 120: loss=0.5787, grad_norm=1.2568, lr=0.000069
+  Batch 125: loss=0.5293, grad_norm=0.4410, lr=0.000068
+  Batch 130: loss=0.6510, grad_norm=0.5600, lr=0.000068
+  Batch 135: loss=0.4843, grad_norm=2.1948, lr=0.000067
+  Batch 140: loss=0.7349, grad_norm=1.0098, lr=0.000066
+  Batch 145: loss=0.5525, grad_norm=0.6503, lr=0.000065
+  Batch 150: loss=0.7275, grad_norm=1.0163, lr=0.000065
+  Batch 155: loss=0.7059, grad_norm=2.5252, lr=0.000064
+  Batch 160: loss=0.8384, grad_norm=0.7913, lr=0.000063
+  Batch 165: loss=0.6676, grad_norm=0.7275, lr=0.000062
+  Batch 170: loss=0.7262, grad_norm=1.0294, lr=0.000062
+  Batch 175: loss=0.6062, grad_norm=0.7238, lr=0.000061
+  Batch 180: loss=0.7413, grad_norm=3.0887, lr=0.000060
+  Batch 185: loss=0.7408, grad_norm=1.0449, lr=0.000059
+  Batch 190: loss=0.7234, grad_norm=1.1157, lr=0.000059
+  Batch 195: loss=0.7724, grad_norm=1.2094, lr=0.000058
+  Batch 200: loss=0.7837, grad_norm=0.7992, lr=0.000057
+  Batch 205: loss=0.6425, grad_norm=3.8039, lr=0.000056
+  Batch 210: loss=0.6320, grad_norm=1.2178, lr=0.000055
+  Batch 215: loss=0.7575, grad_norm=1.2302, lr=0.000055
+  Batch 220: loss=0.6720, grad_norm=1.0069, lr=0.000054
+  Batch 225: loss=0.6741, grad_norm=0.6907, lr=0.000053
+  Batch 230: loss=0.6895, grad_norm=0.4362, lr=0.000052
+  Batch 235: loss=0.7520, grad_norm=1.2689, lr=0.000052
+  Batch 240: loss=0.8613, grad_norm=8.0622, lr=0.000051
+  Batch 245: loss=0.7676, grad_norm=1.0118, lr=0.000050
+  Batch 250: loss=0.7345, grad_norm=0.5194, lr=0.000049
+  Batch 255: loss=0.8128, grad_norm=3.4363, lr=0.000048
+Validation...
+Epoch 2 completed in 1064.82s:
+  Train Loss: 0.6997, Train Acc: 0.7349
+  Val Loss: 0.7490, Val Acc: 0.7144
+  Learning Rate: 0.000048
+  New best validation loss: 0.7490
+
+Epoch 3/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...
+Initial validation - Loss: 0.7518, Acc: 0.7131
+  Batch 5: loss=0.6957, grad_norm=0.6170, lr=0.000047
+  Batch 10: loss=0.6903, grad_norm=0.4267, lr=0.000046
+  Batch 15: loss=0.6286, grad_norm=0.4001, lr=0.000046
+  Batch 20: loss=0.6963, grad_norm=0.3547, lr=0.000045
+  Batch 25: loss=0.7035, grad_norm=0.6332, lr=0.000044
+  Batch 30: loss=0.6954, grad_norm=0.4583, lr=0.000043
+  Batch 35: loss=0.6915, grad_norm=0.2656, lr=0.000042
+  Batch 40: loss=0.7106, grad_norm=0.6113, lr=0.000042
+  Batch 45: loss=0.7561, grad_norm=0.7457, lr=0.000041
+  Batch 50: loss=0.7491, grad_norm=0.4725, lr=0.000040
+  Batch 55: loss=0.6086, grad_norm=0.3290, lr=0.000039
+  Batch 60: loss=0.7703, grad_norm=0.7696, lr=0.000039
+  Batch 65: loss=0.8539, grad_norm=0.7456, lr=0.000038
+  Batch 70: loss=0.7519, grad_norm=0.4741, lr=0.000037
+  Batch 75: loss=0.6244, grad_norm=0.4469, lr=0.000036
+  Batch 80: loss=0.7655, grad_norm=0.5041, lr=0.000036
+  Batch 85: loss=0.4927, grad_norm=0.3125, lr=0.000035
+  Batch 90: loss=0.5600, grad_norm=0.4057, lr=0.000034
+  Batch 95: loss=0.7592, grad_norm=0.5482, lr=0.000033
+  Batch 100: loss=0.7820, grad_norm=0.5683, lr=0.000033
+  Batch 105: loss=0.7567, grad_norm=0.7346, lr=0.000032
+  Batch 110: loss=0.6841, grad_norm=0.6575, lr=0.000031
+  Batch 115: loss=0.5920, grad_norm=2.0716, lr=0.000031
+  Batch 120: loss=0.5698, grad_norm=2.4961, lr=0.000030
+  Batch 125: loss=0.6003, grad_norm=1.9615, lr=0.000029
+  Batch 130: loss=0.5695, grad_norm=0.8690, lr=0.000028
+  Batch 135: loss=0.4570, grad_norm=1.6092, lr=0.000028
+  Batch 140: loss=0.5918, grad_norm=2.5426, lr=0.000027
+  Batch 145: loss=0.6450, grad_norm=1.1893, lr=0.000026
+  Batch 150: loss=0.7236, grad_norm=2.3395, lr=0.000026
+  Batch 155: loss=0.6282, grad_norm=0.9276, lr=0.000025
+  Batch 160: loss=0.6448, grad_norm=2.0240, lr=0.000024
+  Batch 165: loss=0.7936, grad_norm=1.1298, lr=0.000024
+  Batch 170: loss=0.7016, grad_norm=0.6276, lr=0.000023
+  Batch 175: loss=0.8318, grad_norm=2.6392, lr=0.000022
+  Batch 180: loss=0.8355, grad_norm=3.1271, lr=0.000022
+  Batch 185: loss=0.7411, grad_norm=1.1778, lr=0.000021
+  Batch 190: loss=0.7368, grad_norm=1.4311, lr=0.000021
+  Batch 195: loss=0.6127, grad_norm=0.9216, lr=0.000020
+  Batch 200: loss=0.7986, grad_norm=0.8929, lr=0.000019
+  Batch 205: loss=0.6535, grad_norm=1.1951, lr=0.000019
+  Batch 210: loss=0.7289, grad_norm=1.6167, lr=0.000018
+  Batch 215: loss=0.8381, grad_norm=1.7534, lr=0.000018
+  Batch 220: loss=0.6303, grad_norm=0.8236, lr=0.000017
+  Batch 225: loss=0.7057, grad_norm=0.8077, lr=0.000016
+  Batch 230: loss=0.5956, grad_norm=1.1776, lr=0.000016
+  Batch 235: loss=0.6795, grad_norm=0.8604, lr=0.000015
+  Batch 240: loss=0.6387, grad_norm=1.5012, lr=0.000015
+  Batch 245: loss=0.7345, grad_norm=1.2517, lr=0.000014
+  Batch 250: loss=0.6244, grad_norm=1.1925, lr=0.000014
+  Batch 255: loss=0.6474, grad_norm=1.4738, lr=0.000013
+Validation...
+Epoch 3 completed in 1075.05s:
+  Train Loss: 0.6824, Train Acc: 0.7440
+  Val Loss: 0.7377, Val Acc: 0.7317
+  Learning Rate: 0.000013
+  New best validation loss: 0.7377
+  New best validation accuracy: 0.7317
+
+Epoch 4/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...
+Initial validation - Loss: 0.7397, Acc: 0.7277
+  Batch 5: loss=0.7550, grad_norm=1.5288, lr=0.000012
+  Batch 10: loss=0.7321, grad_norm=0.7812, lr=0.000012
+  Batch 15: loss=0.7896, grad_norm=0.3684, lr=0.000011
+  Batch 20: loss=0.7153, grad_norm=0.4113, lr=0.000011
+  Batch 25: loss=0.6722, grad_norm=0.3222, lr=0.000010
+  Batch 30: loss=0.6145, grad_norm=0.5562, lr=0.000010
+  Batch 35: loss=0.8385, grad_norm=0.4652, lr=0.000009
+  Batch 40: loss=0.6603, grad_norm=0.5512, lr=0.000009
+  Batch 45: loss=0.5711, grad_norm=0.3592, lr=0.000009
+  Batch 50: loss=0.6735, grad_norm=0.3807, lr=0.000008
+  Batch 55: loss=0.5531, grad_norm=0.3693, lr=0.000008
+  Batch 60: loss=0.6982, grad_norm=0.5646, lr=0.000007
+  Batch 65: loss=0.7620, grad_norm=0.7596, lr=0.000007
+  Batch 70: loss=0.4881, grad_norm=0.3370, lr=0.000007
+  Batch 75: loss=0.6589, grad_norm=0.3858, lr=0.000006
+  Batch 80: loss=0.6294, grad_norm=0.3638, lr=0.000006
+  Batch 85: loss=0.7932, grad_norm=0.6497, lr=0.000006
+  Batch 90: loss=0.7486, grad_norm=0.4908, lr=0.000005
+  Batch 95: loss=0.6969, grad_norm=0.7509, lr=0.000005
+  Batch 100: loss=0.4908, grad_norm=0.2966, lr=0.000005
+  Batch 105: loss=0.7235, grad_norm=0.3806, lr=0.000004
+  Batch 110: loss=0.6336, grad_norm=0.6948, lr=0.000004
+  Batch 115: loss=0.4881, grad_norm=0.6382, lr=0.000004
+  Batch 120: loss=0.5143, grad_norm=0.7132, lr=0.000004
+  Batch 125: loss=0.4900, grad_norm=1.2744, lr=0.000003
+  Batch 130: loss=0.6202, grad_norm=1.3396, lr=0.000003
+  Batch 135: loss=0.7284, grad_norm=2.1947, lr=0.000003
+  Batch 140: loss=0.6286, grad_norm=1.5884, lr=0.000003
+  Batch 145: loss=0.6069, grad_norm=1.3644, lr=0.000003
+  Batch 150: loss=0.6235, grad_norm=0.6534, lr=0.000002
+  Batch 155: loss=0.6331, grad_norm=1.2935, lr=0.000002
+  Batch 160: loss=0.4942, grad_norm=0.3762, lr=0.000002
+  Batch 165: loss=0.6534, grad_norm=1.8824, lr=0.000002
+  Batch 170: loss=0.6951, grad_norm=2.2812, lr=0.000002
+  Batch 175: loss=0.6257, grad_norm=0.7102, lr=0.000002
+  Batch 180: loss=0.7108, grad_norm=1.4110, lr=0.000001
+  Batch 185: loss=0.5712, grad_norm=0.7142, lr=0.000001
+  Batch 190: loss=0.5582, grad_norm=1.3452, lr=0.000001
+  Batch 195: loss=0.8540, grad_norm=1.1935, lr=0.000001
+  Batch 200: loss=0.7113, grad_norm=0.6284, lr=0.000001
+  Batch 205: loss=0.6302, grad_norm=0.8154, lr=0.000001
+  Batch 210: loss=0.6949, grad_norm=1.6424, lr=0.000001
+  Batch 215: loss=0.7261, grad_norm=1.5151, lr=0.000001
+  Batch 220: loss=0.7636, grad_norm=1.5659, lr=0.000001
+  Batch 225: loss=0.6380, grad_norm=0.7548, lr=0.000001
+  Batch 230: loss=0.7249, grad_norm=0.7494, lr=0.000001
+  Batch 235: loss=0.6961, grad_norm=0.6231, lr=0.000001
+  Batch 240: loss=0.5920, grad_norm=0.8443, lr=0.000001
+  Batch 245: loss=0.6542, grad_norm=0.7076, lr=0.000001
+  Batch 250: loss=0.7487, grad_norm=1.3981, lr=0.000001
+  Batch 255: loss=0.6924, grad_norm=0.9903, lr=0.000001
+Validation...
+Epoch 4 completed in 1152.39s:
+  Train Loss: 0.6801, Train Acc: 0.7457
+  Val Loss: 0.7358, Val Acc: 0.7314
+  Learning Rate: 0.000001
+  New best validation loss: 0.7358
+
+Epoch 5/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...
+Initial validation - Loss: 0.7358, Acc: 0.7314
+  Batch 5: loss=0.7876, grad_norm=2.9208, lr=0.000001
+  Batch 10: loss=0.7539, grad_norm=2.0268, lr=0.000001
+  Batch 15: loss=0.6026, grad_norm=1.4099, lr=0.000001
+  Batch 20: loss=0.6499, grad_norm=1.4939, lr=0.000001
+  Batch 25: loss=0.5624, grad_norm=0.7495, lr=0.000001
+  Batch 30: loss=0.6221, grad_norm=0.8485, lr=0.000001
+  Batch 35: loss=0.6757, grad_norm=1.2932, lr=0.000001
+  Batch 40: loss=0.6238, grad_norm=0.8033, lr=0.000001
+  Batch 45: loss=0.6616, grad_norm=0.8835, lr=0.000001
+  Batch 50: loss=0.5665, grad_norm=0.4313, lr=0.000001
+  Batch 55: loss=0.6822, grad_norm=0.3322, lr=0.000001
+  Batch 60: loss=0.6148, grad_norm=0.3889, lr=0.000001
+  Batch 65: loss=0.5753, grad_norm=0.5603, lr=0.000001
+  Batch 70: loss=0.6304, grad_norm=0.3290, lr=0.000001
+  Batch 75: loss=0.7858, grad_norm=0.4327, lr=0.000001
+  Batch 80: loss=0.5355, grad_norm=0.3279, lr=0.000001
+  Batch 85: loss=0.5503, grad_norm=0.4042, lr=0.000001
+  Batch 90: loss=0.7296, grad_norm=0.4778, lr=0.000001
+  Batch 95: loss=0.6829, grad_norm=1.4643, lr=0.000001
+  Batch 100: loss=0.7171, grad_norm=1.1267, lr=0.000001
+  Batch 105: loss=0.7967, grad_norm=1.1053, lr=0.000001
+  Batch 110: loss=0.7563, grad_norm=0.5921, lr=0.000001
+  Batch 115: loss=0.6668, grad_norm=1.0459, lr=0.000001
+  Batch 120: loss=0.7292, grad_norm=1.6545, lr=0.000001
+  Batch 125: loss=0.6349, grad_norm=1.1337, lr=0.000001
+  Batch 130: loss=0.7016, grad_norm=1.5727, lr=0.000001
+  Batch 135: loss=0.6867, grad_norm=1.3709, lr=0.000001
+  Batch 140: loss=0.6801, grad_norm=1.4726, lr=0.000001
+  Batch 145: loss=0.7414, grad_norm=0.7605, lr=0.000001
+  Batch 150: loss=0.6353, grad_norm=1.0831, lr=0.000001
+  Batch 155: loss=0.6291, grad_norm=1.2563, lr=0.000001
+  Batch 160: loss=0.6365, grad_norm=1.6424, lr=0.000001
+  Batch 165: loss=0.6301, grad_norm=1.3945, lr=0.000001
+  Batch 170: loss=0.7547, grad_norm=1.1657, lr=0.000001
+  Batch 175: loss=0.7243, grad_norm=2.0734, lr=0.000001
+  Batch 180: loss=0.7132, grad_norm=0.6794, lr=0.000001
+  Batch 185: loss=0.5981, grad_norm=1.6329, lr=0.000001
+  Batch 190: loss=0.7354, grad_norm=0.6473, lr=0.000001
+  Batch 195: loss=0.7164, grad_norm=2.4126, lr=0.000001
+  Batch 200: loss=0.7043, grad_norm=0.5181, lr=0.000001
+  Batch 205: loss=0.7035, grad_norm=0.8149, lr=0.000001
+  Batch 210: loss=0.7630, grad_norm=0.6627, lr=0.000001
+  Batch 215: loss=0.7166, grad_norm=1.0478, lr=0.000001
+  Batch 220: loss=0.7041, grad_norm=1.2927, lr=0.000001
+  Batch 225: loss=0.7502, grad_norm=3.5725, lr=0.000001
+  Batch 230: loss=0.6945, grad_norm=1.2506, lr=0.000001
+  Batch 235: loss=0.7813, grad_norm=1.3858, lr=0.000001
+  Batch 240: loss=0.7185, grad_norm=1.1627, lr=0.000001
+  Batch 245: loss=0.6819, grad_norm=0.6246, lr=0.000001
+  Batch 250: loss=0.6329, grad_norm=1.5988, lr=0.000001
+  Batch 255: loss=0.7420, grad_norm=2.1800, lr=0.000001
+Validation...
+Epoch 5 completed in 1081.89s:
+  Train Loss: 0.6774, Train Acc: 0.7439
+  Val Loss: 0.7368, Val Acc: 0.7294
+  Learning Rate: 0.000001
+  Checkpoint saved: ttt_experiments/basic_ttt_20250608_235428/checkpoints/ckpt-1
+
+Epoch 6/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...

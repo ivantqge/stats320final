@@ -1,0 +1,52 @@
+% Sequence Length Analysis Table
+\begin{table}[h]
+\centering
+\caption{Performance metrics stratified by sequence length.}
+\label{tab:sequence_analysis}
+\begin{tabular}{lccc}
+\toprule
+Sequence Length (bins) & Count & CER (\%) & PER (\%) \\
+\midrule
+10-50 & 770 & 36.5 & 39.0 \\
+51-100 & 819 & 38.2 & 40.9 \\
+101-150 & 368 & 38.0 & 40.7 \\
+151-200 & 108 & 38.5 & 41.2 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Phoneme Performance Table
+\begin{table}[h]
+\centering
+\caption{Decoding accuracy by phoneme category.}
+\label{tab:phoneme_performance}
+\begin{tabular}{lcc}
+\toprule
+Phoneme Category & Accuracy (\%) & Count \\
+\midrule
+Long Vowels (/i:/, /u:/, /ɔ:/) & 72.4 & 18,432 \\
+Short Vowels (/ɪ/, /ʊ/, /ə/) & 68.2 & 24,891 \\
+Nasals (/m/, /n/, /ŋ/) & 65.7 & 12,304 \\
+Fricatives (/f/, /s/, /ʃ/, /θ/, /z/, /v/) & 58.3 & 19,785 \\
+Plosives (/p/, /t/, /k/, /b/, /d/, /g/) & 48.3 & 28,164 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% Confusion Pairs Table
+\begin{table}[h]
+\centering
+\caption{Most frequent phoneme confusion pairs.}
+\label{tab:confusion_pairs}
+\begin{tabular}{lcc}
+\toprule
+Phoneme Pair & Confusion Rate (\%) & Type \\
+\midrule
+/p/ ↔ /b/ & 31.2 & Voicing contrast \\
+/t/ ↔ /d/ & 28.7 & Voicing contrast \\
+/s/ ↔ /z/ & 24.3 & Voicing contrast \\
+/ɪ/ ↔ /i:/ & 19.8 & Length contrast \\
+/n/ ↔ /m/ & 17.4 & Place of articulation \\
+\bottomrule
+\end{tabular}
+\end{table}

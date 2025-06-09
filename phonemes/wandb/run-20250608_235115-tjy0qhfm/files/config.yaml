@@ -1,0 +1,87 @@
+_wandb:
+    value:
+        cli_version: 0.20.1
+        code_path: code/train_ttt_on_sentences.py
+        m: []
+        python_version: 3.9.23
+        t:
+            "1":
+                - 2
+                - 3
+                - 12
+            "2":
+                - 2
+                - 3
+                - 12
+            "3":
+                - 2
+                - 3
+                - 13
+                - 15
+                - 16
+                - 55
+            "4": 3.9.23
+            "5": 0.20.1
+            "12": 0.20.1
+            "13": linux-x86_64
+data:
+    value:
+        data_dir: sentences/
+        max_files: null
+        max_sentence_length: 200
+        min_sentence_length: 10
+        subsample_factor: 4
+        train_split: 0.8
+        use_spikepow: true
+        use_tx1: true
+        use_tx2: true
+        use_tx3: true
+        use_tx4: true
+model:
+    value:
+        act_reg: 1e-06
+        bidirectional: false
+        dropout: 0.2
+        n_layers: 2
+        subsample_factor: 1
+        ttt_config:
+            decoder_ln: true
+            inner_encoder: mlp_2
+            inner_iterations: 1
+            inner_lr: 0.01
+            sequence_length: 32
+            use_sgd: true
+        type: TTT_RNN
+        units: 256
+        use_enhanced_ttt: false
+        weight_reg: 1e-06
+output_classes:
+    value: 40
+output_dir:
+    value: ttt_experiments/basic_ttt_20250608_235116
+timestamp:
+    value: "20250608_235115"
+total_phonemes:
+    value: 39
+training:
+    value:
+        batch_size: 32
+        decay_rate: 0.95
+        decay_steps: 1000
+        epochs: 20
+        final_lr: 1e-06
+        grad_clip_norm: 1
+        initial_lr: 0.0001
+        log_freq: 5
+        output_dir: ttt_experiments
+        save_freq: 5
+        use_cosine_decay: true
+        weight_decay: 0
+wandb:
+    value:
+        enabled: true
+        entity: null
+        log_freq: 1
+        mode: online
+        project: neural-ttt-decoding
+        save_code: true

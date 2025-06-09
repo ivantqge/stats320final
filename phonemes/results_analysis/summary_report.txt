@@ -1,0 +1,29 @@
+TTT-RNN Phoneme Decoding Results Summary
+==================================================
+
+OVERALL PERFORMANCE:
+  Character Error Rate (CER): 38.0%
+  Phoneme Error Rate (PER): 40.6%
+  Frame-level Accuracy: 62.0%
+
+TTT ADAPTATION ANALYSIS:
+  Average loss reduction: 37.8%
+  Initial → Final loss: 0.82 → 0.51
+  Time steps with reduction: 94.2%
+
+SEQUENCE LENGTH ANALYSIS:
+  10-50 steps: CER=36.5%, count=770
+  51-100 steps: CER=38.2%, count=819
+  101-150 steps: CER=38.0%, count=368
+  151-200 steps: CER=38.5%, count=108
+
+PHONEME CATEGORY PERFORMANCE:
+  Long Vowels: 72.4% (n=18432)
+  Short Vowels: 68.2% (n=24891)
+  Nasals: 65.7% (n=12304)
+  Fricatives: 58.3% (n=19785)
+  Plosives: 48.3% (n=28164)
+
+ERROR DISTRIBUTION:
+  Perfect sentences: 142 (6.9%)
+  High-error sentences: 98 (4.7%)

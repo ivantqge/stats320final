@@ -1,0 +1,99 @@
+# TTT-RNN Configuration for Phoneme Prediction
+# Based on the MTTT implementation adapted for sequential data
+
+# Dataset configuration
+dataset:
+  name: 'phoneme_dataset'
+  nClasses: 39  # Number of phoneme classes (based on PHONE_DEF)
+  nInputFeatures: 256  # Neural recording features
+  
+# Model configuration
+model:
+  type: 'TTT_RNN'  # Options: 'GRU', 'TTT_RNN'
+  nUnits: 512
+  nLayers: 2
+  bidirectional: false
+  dropout: 0.1
+  weightReg: 1e-4
+  actReg: 1e-4
+  subsampleFactor: 1
+  
+  # TTT-specific configuration
+  use_enhanced_ttt: false  #never set to true
+  ttt_config:
+    # Inner encoder architecture
+    inner_encoder: 'mlp_2'  # Options: 'mlp_1', 'mlp_2'
+    
+    # Inner optimization parameters
+    inner_iterations: 1  # Number of inner optimization steps
+    inner_lr: [0.01]     # Learning rates for each iteration (list)
+    use_sgd: true        # Use SGD for inner optimization
+    
+    # Architecture options
+    decoder_ln: true     # Use layer normalization in decoder
+    
+    # Enhanced TTT options (only used if use_enhanced_ttt: true)
+    sequence_length: 32  # Length of sequence buffer for enhanced TTT
+
+# Training configuration  
+training:
+  learnRateStart: 1e-3
+  learnRateEnd: 1e-5
+  learnRatePower: 1.0
+  nBatchesToTrain: 25000
+  warmUpSteps: 500
+  batchSize: 32
+  
+  # TTT-specific training options
+  include_inner_loss: false  # Whether to include inner TTT losses in training
+  inner_loss_weight: 0.1    # Weight for inner losses if included
+
+# Experimental configurations for different TTT setups
+experiments:
+  # Basic TTT-RNN configuration
+  basic_ttt:
+    model:
+      use_enhanced_ttt: false
+      ttt_config:
+        inner_encoder: 'mlp_1'
+        inner_iterations: 1
+        inner_lr: [0.01]
+        use_sgd: true
+        decoder_ln: false
+        
+  # Enhanced TTT-RNN with multiple iterations
+  enhanced_ttt:
+    model:
+      use_enhanced_ttt: true
+      ttt_config:
+        inner_encoder: 'mlp_2'
+        inner_iterations: 2
+        inner_lr: [0.01, 0.005]
+        use_sgd: true
+        decoder_ln: true
+        sequence_length: 64
+        
+  # High-capacity TTT-RNN
+  high_capacity_ttt:
+    model:
+      nUnits: 1024
+      nLayers: 3
+      use_enhanced_ttt: true
+      ttt_config:
+        inner_encoder: 'mlp_2'
+        inner_iterations: 3
+        inner_lr: [0.02, 0.01, 0.005]
+        use_sgd: false  # Use full batch gradient descent
+        decoder_ln: true
+        sequence_length: 128
+
+# Comparison configurations
+baseline:
+  # Standard GRU for comparison
+  gru_baseline:
+    model:
+      type: 'GRU'
+      nUnits: 512
+      nLayers: 2
+      bidirectional: false
+      dropout: 0.1 

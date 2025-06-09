@@ -1,0 +1,57 @@
+Initialized wandb run: basic_ttt_20250608_230703
+Output directory: ttt_experiments/basic_ttt_20250608_230705
+Neural data loader initialized with 512 features
+Data loader setup with 512 features
+Model setup: TTT_RNN created (will build on first forward pass)
+Starting training...
+Loading neural data...
+Found 24 .mat files
+Loading sentences/t12.2022.04.28_sentences.mat...
+Processing 300 sentences from t12.2022.04.28_sentences.mat
+Successfully processed 262 sentences from t12.2022.04.28_sentences.mat
+Loading sentences/t12.2022.05.05_sentences.mat...
+Processing 380 sentences from t12.2022.05.05_sentences.mat
+Successfully processed 372 sentences from t12.2022.05.05_sentences.mat
+Loaded 634 total sentences from 2 files
+Loaded 634 sentences
+Average sentence length: 128.1 time steps
+Feature range: [0.000, 11204071.000]
+Train: 507 sentences, Val: 127 sentences
+/nlp/scr/ethanhsu/miniconda3/envs/ttt_phoneme_env/lib/python3.9/site-packages/tensorflow/python/data/ops/structured_function.py:256: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Data loading complete!
+Could not count model parameters: Weights for model inner_encoder have not yet been created. Weights are created when the Model is first called on inputs or `build()` is called with an `input_shape`.
+
+Epoch 1/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...
+Initial validation - Loss: 2.3850, Acc: 0.5189
+  Batch 5: loss=1.1843, grad_norm=7.1927, lr=0.000300
+  Batch 10: loss=1.1092, grad_norm=5.9015, lr=0.000300
+  Batch 15: loss=1.0376, grad_norm=0.7705, lr=0.000300
+  Batch 20: loss=1.0779, grad_norm=2.1469, lr=0.000300
+  Batch 25: loss=0.9613, grad_norm=0.8557, lr=0.000300
+  Batch 30: loss=1.0687, grad_norm=0.6916, lr=0.000299
+  Batch 35: loss=1.0082, grad_norm=0.8037, lr=0.000299
+  Batch 40: loss=0.9850, grad_norm=0.4749, lr=0.000299
+  Batch 45: loss=1.0848, grad_norm=1.2311, lr=0.000299
+  Batch 50: loss=1.1149, grad_norm=2.5078, lr=0.000298
+  Batch 55: loss=1.0750, grad_norm=0.8516, lr=0.000298
+  Batch 60: loss=1.0116, grad_norm=0.7112, lr=0.000298
+Validation...
+Epoch 1 completed in 337.79s:
+  Train Loss: 1.1257, Train Acc: 0.5870
+  Val Loss: 0.9264, Val Acc: 0.6450
+  Learning Rate: 0.000297
+  New best validation loss: 0.9264
+  New best validation accuracy: 0.6450
+
+Epoch 2/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...
+Initial validation - Loss: 0.9262, Acc: 0.6441
+  Batch 5: loss=0.9134, grad_norm=2.5315, lr=0.000297
+  Batch 10: loss=1.0241, grad_norm=0.8860, lr=0.000296
+  Batch 15: loss=0.9038, grad_norm=0.6224, lr=0.000296

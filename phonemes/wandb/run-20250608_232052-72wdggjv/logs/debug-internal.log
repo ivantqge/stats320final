@@ -1,0 +1,17 @@
+{"time":"2025-06-08T23:20:52.754056874-07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/juice2/scr2/ethanhsu/neural_TTT/wandb/run-20250608_232052-72wdggjv/logs/debug-core.log"}
+{"time":"2025-06-08T23:20:52.953394983-07:00","level":"INFO","msg":"stream: created new stream","id":"72wdggjv"}
+{"time":"2025-06-08T23:20:52.953445233-07:00","level":"INFO","msg":"stream: started","id":"72wdggjv"}
+{"time":"2025-06-08T23:20:52.953504713-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"72wdggjv"}
+{"time":"2025-06-08T23:20:52.953671834-07:00","level":"INFO","msg":"handler: started","stream_id":"72wdggjv"}
+{"time":"2025-06-08T23:20:52.953694414-07:00","level":"INFO","msg":"sender: started","stream_id":"72wdggjv"}
+{"time":"2025-06-08T23:20:53.074125245-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-08T23:20:53.084305769-07:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-06-08T23:48:49.03858542-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-08T23:48:49.03885675-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-08T23:48:49.990180381-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-08T23:48:50.040073897-07:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading summary","runtime_seconds":0.049795666}],"total_operations":1}}
+{"time":"2025-06-08T23:48:50.09401014-07:00","level":"INFO","msg":"stream: closing","id":"72wdggjv"}
+{"time":"2025-06-08T23:48:50.09404378-07:00","level":"INFO","msg":"handler: closed","stream_id":"72wdggjv"}
+{"time":"2025-06-08T23:48:50.09407245-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"72wdggjv"}
+{"time":"2025-06-08T23:48:50.0941312-07:00","level":"INFO","msg":"sender: closed","stream_id":"72wdggjv"}
+{"time":"2025-06-08T23:48:50.098553198-07:00","level":"INFO","msg":"stream: closed","id":"72wdggjv"}

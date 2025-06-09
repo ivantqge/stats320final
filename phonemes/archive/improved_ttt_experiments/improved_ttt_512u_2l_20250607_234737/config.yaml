@@ -1,0 +1,40 @@
+data:
+  data_dir: sentences/
+  max_files: 4
+  max_sentence_length: 400
+  min_sentence_length: 20
+  subsample_factor: 2
+  train_split: 0.8
+  use_spikepow: true
+  use_tx1: true
+  use_tx2: false
+  use_tx3: false
+  use_tx4: false
+model:
+  act_reg: 0.0
+  bidirectional: false
+  dropout: 0.4
+  mini_batch_size: 16
+  n_layers: 2
+  num_heads: 8
+  stack_kernel_size: 14
+  stack_strides: 4
+  subsample_factor: 1
+  ttt_base_lr: 0.1
+  type: ImprovedTTT_RNN
+  units: 512
+  use_gate: true
+  use_layer_norm: true
+  use_stacked_conv: true
+  weight_reg: 1.0e-05
+training:
+  batch_size: 32
+  decay_steps: 1000
+  epochs: 15
+  final_lr: 1.0e-06
+  grad_clip_norm: 1.0
+  initial_lr: 0.0005
+  log_freq: 10
+  lr_schedule: cosine
+  output_dir: improved_ttt_experiments
+  save_freq: 3

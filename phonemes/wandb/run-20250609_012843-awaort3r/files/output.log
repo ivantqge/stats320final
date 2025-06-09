@@ -1,0 +1,99 @@
+Initialized wandb run: basic_ttt_20250609_012842
+Output directory: ttt_experiments/basic_ttt_20250609_012844
+Neural data loader initialized with 1280 features
+Data loader setup with 1280 features
+Model setup: TTT_RNN created (will build on first forward pass)
+Starting training...
+Loading neural data...
+Found 24 .mat files
+Loading sentences/t12.2022.04.28_sentences.mat...
+Processing 300 sentences from t12.2022.04.28_sentences.mat
+Successfully processed 262 sentences from t12.2022.04.28_sentences.mat
+Loading sentences/t12.2022.05.05_sentences.mat...
+Processing 380 sentences from t12.2022.05.05_sentences.mat
+Successfully processed 372 sentences from t12.2022.05.05_sentences.mat
+Loading sentences/t12.2022.05.17_sentences.mat...
+Processing 490 sentences from t12.2022.05.17_sentences.mat
+Successfully processed 490 sentences from t12.2022.05.17_sentences.mat
+Loading sentences/t12.2022.05.19_sentences.mat...
+Processing 250 sentences from t12.2022.05.19_sentences.mat
+Successfully processed 250 sentences from t12.2022.05.19_sentences.mat
+Loading sentences/t12.2022.05.24_sentences.mat...
+Processing 475 sentences from t12.2022.05.24_sentences.mat
+Successfully processed 474 sentences from t12.2022.05.24_sentences.mat
+Loading sentences/t12.2022.05.26_sentences.mat...
+Processing 450 sentences from t12.2022.05.26_sentences.mat
+Successfully processed 450 sentences from t12.2022.05.26_sentences.mat
+Loading sentences/t12.2022.06.02_sentences.mat...
+Processing 515 sentences from t12.2022.06.02_sentences.mat
+Successfully processed 515 sentences from t12.2022.06.02_sentences.mat
+Loading sentences/t12.2022.06.07_sentences.mat...
+Processing 490 sentences from t12.2022.06.07_sentences.mat
+Successfully processed 489 sentences from t12.2022.06.07_sentences.mat
+Loading sentences/t12.2022.06.14_sentences.mat...
+Processing 450 sentences from t12.2022.06.14_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.14_sentences.mat
+Loading sentences/t12.2022.06.16_sentences.mat...
+Processing 450 sentences from t12.2022.06.16_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.16_sentences.mat
+Loading sentences/t12.2022.06.21_sentences.mat...
+Processing 410 sentences from t12.2022.06.21_sentences.mat
+Successfully processed 410 sentences from t12.2022.06.21_sentences.mat
+Loading sentences/t12.2022.06.23_sentences.mat...
+Processing 570 sentences from t12.2022.06.23_sentences.mat
+Successfully processed 570 sentences from t12.2022.06.23_sentences.mat
+Loading sentences/t12.2022.06.28_sentences.mat...
+Processing 450 sentences from t12.2022.06.28_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.28_sentences.mat
+Loading sentences/t12.2022.07.05_sentences.mat...
+Processing 450 sentences from t12.2022.07.05_sentences.mat
+Successfully processed 450 sentences from t12.2022.07.05_sentences.mat
+Loading sentences/t12.2022.07.14_sentences.mat...
+Processing 490 sentences from t12.2022.07.14_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.14_sentences.mat
+Loading sentences/t12.2022.07.21_sentences.mat...
+Processing 490 sentences from t12.2022.07.21_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.21_sentences.mat
+Loading sentences/t12.2022.07.27_sentences.mat...
+Processing 490 sentences from t12.2022.07.27_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.27_sentences.mat
+Loading sentences/t12.2022.07.29_sentences.mat...
+Processing 240 sentences from t12.2022.07.29_sentences.mat
+Successfully processed 240 sentences from t12.2022.07.29_sentences.mat
+Loading sentences/t12.2022.08.02_sentences.mat...
+Processing 490 sentences from t12.2022.08.02_sentences.mat
+Successfully processed 490 sentences from t12.2022.08.02_sentences.mat
+Loading sentences/t12.2022.08.11_sentences.mat...
+Processing 410 sentences from t12.2022.08.11_sentences.mat
+Successfully processed 410 sentences from t12.2022.08.11_sentences.mat
+Loading sentences/t12.2022.08.13_sentences.mat...
+Processing 410 sentences from t12.2022.08.13_sentences.mat
+Successfully processed 410 sentences from t12.2022.08.13_sentences.mat
+Loading sentences/t12.2022.08.18_sentences.mat...
+Error loading sentences/t12.2022.08.18_sentences.mat: Unable to synchronously open file (file signature not found)
+Loading sentences/t12.2022.08.23_sentences.mat...
+Processing 610 sentences from t12.2022.08.23_sentences.mat
+Successfully processed 610 sentences from t12.2022.08.23_sentences.mat
+Loading sentences/t12.2022.08.25_sentences.mat...
+Processing 610 sentences from t12.2022.08.25_sentences.mat
+Successfully processed 610 sentences from t12.2022.08.25_sentences.mat
+Loaded 10322 total sentences from 24 files
+Loaded 10322 sentences
+Average sentence length: 76.9 time steps
+Feature range: [0.000, 1879867264.000]
+Train: 8257 sentences, Val: 2065 sentences
+/nlp/scr/ethanhsu/miniconda3/envs/ttt_phoneme_env/lib/python3.9/site-packages/tensorflow/python/data/ops/structured_function.py:256: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Data loading complete!
+Could not count model parameters: Weights for model inner_encoder have not yet been created. Weights are created when the Model is first called on inputs or `build()` is called with an `input_shape`.
+
+Epoch 1/20
+Training...
+Training failed with error: Exception encountered when calling layer 'ttt_cell_0' (type TTTRNNCell).
+
+Weights for model inner_encoder have not yet been created. Weights are created when the Model is first called on inputs or `build()` is called with an `input_shape`.
+
+Call arguments received by layer 'ttt_cell_0' (type TTTRNNCell):
+  • inputs=tf.Tensor(shape=(32, 512), dtype=float32)
+  • states=('tf.Tensor(shape=(32, 256), dtype=float32)',)
+  • training=True

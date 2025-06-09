@@ -1,0 +1,30 @@
+2025-06-09 01:28:43,317 INFO    MainThread:3282856 [wandb_setup.py:_flush():81] Current SDK version is 0.20.1
+2025-06-09 01:28:43,317 INFO    MainThread:3282856 [wandb_setup.py:_flush():81] Configure stats pid to 3282856
+2025-06-09 01:28:43,317 INFO    MainThread:3282856 [wandb_setup.py:_flush():81] Loading settings from /afs/cs.stanford.edu/u/ethanhsu/.config/wandb/settings
+2025-06-09 01:28:43,318 INFO    MainThread:3282856 [wandb_setup.py:_flush():81] Loading settings from /juice2/scr2/ethanhsu/neural_TTT/wandb/settings
+2025-06-09 01:28:43,318 INFO    MainThread:3282856 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2025-06-09 01:28:43,318 INFO    MainThread:3282856 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /juice2/scr2/ethanhsu/neural_TTT/wandb/run-20250609_012843-awaort3r/logs/debug.log
+2025-06-09 01:28:43,318 INFO    MainThread:3282856 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /juice2/scr2/ethanhsu/neural_TTT/wandb/run-20250609_012843-awaort3r/logs/debug-internal.log
+2025-06-09 01:28:43,318 INFO    MainThread:3282856 [wandb_init.py:init():831] calling init triggers
+2025-06-09 01:28:43,318 INFO    MainThread:3282856 [wandb_init.py:init():836] wandb.init called with sweep_config: {}
+config: {'wandb': {'enabled': True, 'project': 'neural-ttt-decoding', 'entity': None, 'mode': 'online', 'save_code': True, 'log_freq': 1}, 'data': {'data_dir': 'sentences/', 'use_spikepow': True, 'use_tx1': True, 'use_tx2': True, 'use_tx3': True, 'use_tx4': True, 'subsample_factor': 4, 'min_sentence_length': 10, 'max_sentence_length': 200, 'train_split': 0.8, 'max_files': None}, 'model': {'type': 'TTT_RNN', 'units': 256, 'weight_reg': 1e-06, 'act_reg': 1e-06, 'subsample_factor': 1, 'bidirectional': False, 'dropout': 0.2, 'n_layers': 2, 'use_enhanced_ttt': False, 'ttt_config': {'inner_encoder': 'mlp_2', 'inner_iterations': 2, 'inner_lr': 0.01, 'use_sgd': True, 'decoder_ln': True, 'sequence_length': 32}}, 'training': {'output_dir': 'ttt_experiments', 'epochs': 20, 'batch_size': 32, 'initial_lr': 0.0001, 'final_lr': 1e-06, 'decay_steps': 1000, 'decay_rate': 0.95, 'use_cosine_decay': True, 'grad_clip_norm': 1.0, 'log_freq': 5, 'save_freq': 5, 'weight_decay': 0}, '_wandb': {'code_path': 'code/train_ttt_on_sentences.py'}}
+2025-06-09 01:28:43,318 INFO    MainThread:3282856 [wandb_init.py:init():872] starting backend
+2025-06-09 01:28:43,551 INFO    MainThread:3282856 [wandb_init.py:init():875] sending inform_init request
+2025-06-09 01:28:43,557 INFO    MainThread:3282856 [wandb_init.py:init():883] backend started and connected
+2025-06-09 01:28:43,561 INFO    MainThread:3282856 [wandb_init.py:init():956] updated telemetry
+2025-06-09 01:28:43,563 INFO    MainThread:3282856 [wandb_init.py:init():980] communicating run to backend with 90.0 second timeout
+2025-06-09 01:28:43,924 INFO    MainThread:3282856 [wandb_init.py:init():1032] starting run threads in backend
+2025-06-09 01:28:44,260 INFO    MainThread:3282856 [wandb_run.py:_console_start():2453] atexit reg
+2025-06-09 01:28:44,260 INFO    MainThread:3282856 [wandb_run.py:_redirect():2301] redirect: wrap_raw
+2025-06-09 01:28:44,260 INFO    MainThread:3282856 [wandb_run.py:_redirect():2370] Wrapping output streams.
+2025-06-09 01:28:44,260 INFO    MainThread:3282856 [wandb_run.py:_redirect():2393] Redirects installed.
+2025-06-09 01:28:44,265 INFO    MainThread:3282856 [wandb_init.py:init():1078] run started, returning control to user process
+2025-06-09 01:28:44,265 INFO    MainThread:3282856 [wandb_run.py:_config_callback():1358] config_cb None None {'total_phonemes': 39, 'output_classes': 40, 'timestamp': '20250609_012842'}
+2025-06-09 01:28:44,276 INFO    MainThread:3282856 [wandb_run.py:_config_callback():1358] config_cb None None {'output_dir': 'ttt_experiments/basic_ttt_20250609_012844'}
+2025-06-09 01:30:58,095 INFO    MainThread:3282856 [wandb_run.py:_finish():2219] finishing run ethanhsu-stanford-university/neural-ttt-decoding/awaort3r
+2025-06-09 01:30:58,096 INFO    MainThread:3282856 [wandb_run.py:_atexit_cleanup():2418] got exitcode: 0
+2025-06-09 01:30:58,096 INFO    MainThread:3282856 [wandb_run.py:_restore():2400] restore
+2025-06-09 01:30:58,096 INFO    MainThread:3282856 [wandb_run.py:_restore():2406] restore done
+2025-06-09 01:30:59,136 INFO    MainThread:3282856 [wandb_run.py:_footer_history_summary_info():4000] rendering history
+2025-06-09 01:30:59,137 INFO    MainThread:3282856 [wandb_run.py:_footer_history_summary_info():4032] rendering summary
+2025-06-09 01:30:59,137 INFO    MainThread:3282856 [wandb_run.py:_footer_sync_info():3961] logging synced files

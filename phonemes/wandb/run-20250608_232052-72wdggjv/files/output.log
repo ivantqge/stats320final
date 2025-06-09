@@ -1,0 +1,162 @@
+Initialized wandb run: basic_ttt_20250608_232051
+Output directory: ttt_experiments/basic_ttt_20250608_232053
+Neural data loader initialized with 1280 features
+Data loader setup with 1280 features
+Model setup: TTT_RNN created (will build on first forward pass)
+Starting training...
+Loading neural data...
+Found 24 .mat files
+Loading sentences/t12.2022.04.28_sentences.mat...
+Processing 300 sentences from t12.2022.04.28_sentences.mat
+Successfully processed 262 sentences from t12.2022.04.28_sentences.mat
+Loading sentences/t12.2022.05.05_sentences.mat...
+Processing 380 sentences from t12.2022.05.05_sentences.mat
+Successfully processed 372 sentences from t12.2022.05.05_sentences.mat
+Loading sentences/t12.2022.05.17_sentences.mat...
+Processing 490 sentences from t12.2022.05.17_sentences.mat
+Successfully processed 490 sentences from t12.2022.05.17_sentences.mat
+Loading sentences/t12.2022.05.19_sentences.mat...
+Processing 250 sentences from t12.2022.05.19_sentences.mat
+Successfully processed 250 sentences from t12.2022.05.19_sentences.mat
+Loading sentences/t12.2022.05.24_sentences.mat...
+Processing 475 sentences from t12.2022.05.24_sentences.mat
+Successfully processed 474 sentences from t12.2022.05.24_sentences.mat
+Loading sentences/t12.2022.05.26_sentences.mat...
+Processing 450 sentences from t12.2022.05.26_sentences.mat
+Successfully processed 450 sentences from t12.2022.05.26_sentences.mat
+Loading sentences/t12.2022.06.02_sentences.mat...
+Processing 515 sentences from t12.2022.06.02_sentences.mat
+Successfully processed 515 sentences from t12.2022.06.02_sentences.mat
+Loading sentences/t12.2022.06.07_sentences.mat...
+Processing 490 sentences from t12.2022.06.07_sentences.mat
+Successfully processed 489 sentences from t12.2022.06.07_sentences.mat
+Loading sentences/t12.2022.06.14_sentences.mat...
+Processing 450 sentences from t12.2022.06.14_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.14_sentences.mat
+Loading sentences/t12.2022.06.16_sentences.mat...
+Processing 450 sentences from t12.2022.06.16_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.16_sentences.mat
+Loading sentences/t12.2022.06.21_sentences.mat...
+Processing 410 sentences from t12.2022.06.21_sentences.mat
+Successfully processed 410 sentences from t12.2022.06.21_sentences.mat
+Loading sentences/t12.2022.06.23_sentences.mat...
+Processing 570 sentences from t12.2022.06.23_sentences.mat
+Successfully processed 570 sentences from t12.2022.06.23_sentences.mat
+Loading sentences/t12.2022.06.28_sentences.mat...
+Processing 450 sentences from t12.2022.06.28_sentences.mat
+Successfully processed 450 sentences from t12.2022.06.28_sentences.mat
+Loading sentences/t12.2022.07.05_sentences.mat...
+Processing 450 sentences from t12.2022.07.05_sentences.mat
+Successfully processed 450 sentences from t12.2022.07.05_sentences.mat
+Loading sentences/t12.2022.07.14_sentences.mat...
+Processing 490 sentences from t12.2022.07.14_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.14_sentences.mat
+Loading sentences/t12.2022.07.21_sentences.mat...
+Processing 490 sentences from t12.2022.07.21_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.21_sentences.mat
+Loading sentences/t12.2022.07.27_sentences.mat...
+Processing 490 sentences from t12.2022.07.27_sentences.mat
+Successfully processed 490 sentences from t12.2022.07.27_sentences.mat
+Loading sentences/t12.2022.07.29_sentences.mat...
+Processing 240 sentences from t12.2022.07.29_sentences.mat
+Successfully processed 240 sentences from t12.2022.07.29_sentences.mat
+Loading sentences/t12.2022.08.02_sentences.mat...
+Processing 490 sentences from t12.2022.08.02_sentences.mat
+Successfully processed 490 sentences from t12.2022.08.02_sentences.mat
+Loading sentences/t12.2022.08.11_sentences.mat...
+Processing 410 sentences from t12.2022.08.11_sentences.mat
+Successfully processed 410 sentences from t12.2022.08.11_sentences.mat
+Loading sentences/t12.2022.08.13_sentences.mat...
+Processing 410 sentences from t12.2022.08.13_sentences.mat
+Successfully processed 410 sentences from t12.2022.08.13_sentences.mat
+Loading sentences/t12.2022.08.18_sentences.mat...
+Error loading sentences/t12.2022.08.18_sentences.mat: Unable to synchronously open file (file signature not found)
+Loading sentences/t12.2022.08.23_sentences.mat...
+Processing 610 sentences from t12.2022.08.23_sentences.mat
+Successfully processed 610 sentences from t12.2022.08.23_sentences.mat
+Loading sentences/t12.2022.08.25_sentences.mat...
+Processing 610 sentences from t12.2022.08.25_sentences.mat
+Successfully processed 610 sentences from t12.2022.08.25_sentences.mat
+Loaded 10322 total sentences from 24 files
+Loaded 10322 sentences
+Average sentence length: 76.9 time steps
+Feature range: [0.000, 1879867264.000]
+Train: 8257 sentences, Val: 2065 sentences
+/nlp/scr/ethanhsu/miniconda3/envs/ttt_phoneme_env/lib/python3.9/site-packages/tensorflow/python/data/ops/structured_function.py:256: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Data loading complete!
+Could not count model parameters: Weights for model inner_encoder have not yet been created. Weights are created when the Model is first called on inputs or `build()` is called with an `input_shape`.
+
+Epoch 1/20
+Training...
+Model has 1,982,248 trainable parameters
+Computing initial validation metrics...
+Initial validation - Loss: 2.0641, Acc: 0.6318
+  Batch 5: loss=1.4351, grad_norm=12.9491, lr=0.000300
+  Batch 10: loss=1.2565, grad_norm=2.5629, lr=0.000300
+  Batch 15: loss=0.9947, grad_norm=1.1785, lr=0.000300
+  Batch 20: loss=0.9749, grad_norm=0.9882, lr=0.000300
+  Batch 25: loss=0.7758, grad_norm=1.3752, lr=0.000300
+  Batch 30: loss=0.8207, grad_norm=1.3892, lr=0.000299
+  Batch 35: loss=0.9120, grad_norm=1.6834, lr=0.000299
+  Batch 40: loss=0.7327, grad_norm=1.8431, lr=0.000299
+  Batch 45: loss=1.1270, grad_norm=2.7563, lr=0.000299
+  Batch 50: loss=0.8398, grad_norm=1.7362, lr=0.000298
+  Batch 55: loss=0.9517, grad_norm=1.9663, lr=0.000298
+  Batch 60: loss=1.0295, grad_norm=0.7995, lr=0.000298
+  Batch 65: loss=0.9759, grad_norm=1.4820, lr=0.000297
+  Batch 70: loss=1.0562, grad_norm=1.3977, lr=0.000297
+  Batch 75: loss=0.9599, grad_norm=1.4072, lr=0.000296
+  Batch 80: loss=0.8829, grad_norm=0.9265, lr=0.000296
+  Batch 85: loss=0.8106, grad_norm=1.6084, lr=0.000295
+  Batch 90: loss=0.7656, grad_norm=1.3199, lr=0.000294
+  Batch 95: loss=0.9197, grad_norm=1.3473, lr=0.000294
+  Batch 100: loss=1.1061, grad_norm=1.0480, lr=0.000293
+  Batch 105: loss=0.8088, grad_norm=0.7605, lr=0.000292
+  Batch 110: loss=0.9265, grad_norm=0.8337, lr=0.000292
+  Batch 115: loss=0.9835, grad_norm=0.5628, lr=0.000291
+  Batch 120: loss=0.7850, grad_norm=0.7334, lr=0.000290
+  Batch 125: loss=0.8618, grad_norm=0.7527, lr=0.000289
+  Batch 130: loss=0.8501, grad_norm=0.7068, lr=0.000288
+  Batch 135: loss=0.9848, grad_norm=0.8172, lr=0.000287
+  Batch 140: loss=0.7262, grad_norm=0.6166, lr=0.000286
+  Batch 145: loss=0.8220, grad_norm=0.8832, lr=0.000285
+  Batch 150: loss=0.7393, grad_norm=0.5666, lr=0.000284
+  Batch 155: loss=0.7866, grad_norm=0.5091, lr=0.000283
+  Batch 160: loss=0.9297, grad_norm=0.8328, lr=0.000282
+  Batch 165: loss=0.8630, grad_norm=0.5927, lr=0.000281
+  Batch 170: loss=0.7385, grad_norm=0.3756, lr=0.000280
+  Batch 175: loss=0.9408, grad_norm=0.6683, lr=0.000279
+  Batch 180: loss=0.8587, grad_norm=0.9899, lr=0.000278
+  Batch 185: loss=0.8966, grad_norm=0.9547, lr=0.000276
+  Batch 190: loss=0.9578, grad_norm=0.8821, lr=0.000275
+  Batch 195: loss=0.9650, grad_norm=0.8502, lr=0.000274
+  Batch 200: loss=0.6804, grad_norm=0.4133, lr=0.000273
+  Batch 205: loss=0.9916, grad_norm=1.0438, lr=0.000271
+  Batch 210: loss=0.6195, grad_norm=0.4227, lr=0.000270
+  Batch 215: loss=1.0401, grad_norm=0.5880, lr=0.000268
+  Batch 220: loss=0.8675, grad_norm=0.9926, lr=0.000267
+  Batch 225: loss=0.6806, grad_norm=0.3527, lr=0.000266
+  Batch 230: loss=0.8595, grad_norm=0.8536, lr=0.000264
+  Batch 235: loss=0.6576, grad_norm=0.2923, lr=0.000263
+  Batch 240: loss=0.6237, grad_norm=0.3914, lr=0.000261
+  Batch 245: loss=0.6534, grad_norm=0.4454, lr=0.000259
+  Batch 250: loss=0.7176, grad_norm=0.4178, lr=0.000258
+  Batch 255: loss=1.1653, grad_norm=0.7656, lr=0.000256
+  Batch 260: loss=0.8441, grad_norm=0.6907, lr=0.000255
+  Batch 265: loss=0.9495, grad_norm=0.9166, lr=0.000253
+  Batch 270: loss=0.7085, grad_norm=0.5571, lr=0.000251
+  Batch 275: loss=0.7343, grad_norm=0.7007, lr=0.000250
+  Batch 280: loss=0.8699, grad_norm=0.5058, lr=0.000248
+  Batch 285: loss=0.9351, grad_norm=0.6680, lr=0.000246
+  Batch 290: loss=0.7585, grad_norm=0.8894, lr=0.000244
+  Batch 295: loss=0.8388, grad_norm=0.7677, lr=0.000242
+  Batch 300: loss=0.8739, grad_norm=0.5479, lr=0.000241
+  Batch 305: loss=1.0815, grad_norm=0.6196, lr=0.000239
+  Batch 310: loss=0.8253, grad_norm=0.8119, lr=0.000237
+  Batch 315: loss=0.7829, grad_norm=1.0921, lr=0.000235
+  Batch 320: loss=0.7925, grad_norm=0.6991, lr=0.000233
+  Batch 325: loss=0.8261, grad_norm=0.5804, lr=0.000231
+  Batch 330: loss=0.8200, grad_norm=0.3833, lr=0.000229
+  Batch 335: loss=0.9477, grad_norm=0.5076, lr=0.000227
+  Batch 340: loss=0.8531, grad_norm=0.5763, lr=0.000225

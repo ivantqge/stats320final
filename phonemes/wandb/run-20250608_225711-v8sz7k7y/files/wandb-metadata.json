@@ -1,0 +1,42 @@
+{
+  "os": "Linux-5.4.0-155-generic-x86_64-with-glibc2.31",
+  "python": "CPython 3.9.23",
+  "startedAt": "2025-06-09T05:57:11.704160Z",
+  "program": "/juice2/scr2/ethanhsu/neural_TTT/train_ttt_on_sentences.py",
+  "codePath": "train_ttt_on_sentences.py",
+  "email": "ethanhsu@stanford.edu",
+  "root": "/juice2/scr2/ethanhsu/neural_TTT",
+  "host": "sphinx8.stanford.edu",
+  "executable": "/nlp/scr/ethanhsu/miniconda3/envs/ttt_phoneme_env/bin/python",
+  "codePathLocal": "train_ttt_on_sentences.py",
+  "cpu_count": 128,
+  "cpu_count_logical": 255,
+  "gpu": "NVIDIA A100-SXM4-80GB",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "942725181440",
+      "used": "136447168512"
+    }
+  },
+  "memory": {
+    "total": "1081996443648"
+  },
+  "cpu": {
+    "count": 128,
+    "countLogical": 255
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA A100-SXM4-80GB",
+      "memoryTotal": "85899345920",
+      "cudaCores": 6912,
+      "architecture": "Ampere",
+      "uuid": "GPU-8652a5d6-8523-5ffb-fa48-fa5648f687cb"
+    }
+  ],
+  "slurm": {
+    "job_id": "10409517"
+  },
+  "cudaVersion": "12.2"
+}

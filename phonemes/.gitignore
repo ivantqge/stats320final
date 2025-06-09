@@ -1,0 +1,59 @@
+sentences/
+sentences.tar
+__pycache__/
+
+
+# Experiment results and outputs
+ttt_experiments/
+wandb/
+
+# Model files and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.pb
+*.onnx
+models/
+checkpoints/
+
+# Data files (large datasets)
+*.tar.gz
+*.zip
+*.tar.xz
+*.hdf5
+*.h5
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# Environment and IDE files
+.env
+.venv/
+venv/
+env/
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python compiled files and caches
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+# OS generated files
+Thumbs.db
+.DS_Store

@@ -1,0 +1,17 @@
+{"time":"2025-06-08T22:57:11.707709375-07:00","level":"INFO","msg":"stream: starting","core version":"0.20.1","symlink path":"/juice2/scr2/ethanhsu/neural_TTT/wandb/run-20250608_225711-v8sz7k7y/logs/debug-core.log"}
+{"time":"2025-06-08T22:57:11.904482765-07:00","level":"INFO","msg":"stream: created new stream","id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:11.904529235-07:00","level":"INFO","msg":"stream: started","id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:11.905900673-07:00","level":"INFO","msg":"handler: started","stream_id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:11.905933943-07:00","level":"INFO","msg":"writer: Do: started","stream_id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:11.905978403-07:00","level":"INFO","msg":"sender: started","stream_id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:12.084428028-07:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-06-08T22:57:12.09028436-07:00","level":"ERROR","msg":"git repo not found","error":"repository does not exist"}
+{"time":"2025-06-08T22:57:24.538194915-07:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-06-08T22:57:24.538465295-07:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-06-08T22:57:25.342489858-07:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-06-08T22:57:25.441045653-07:00","level":"INFO","msg":"handler: operation stats","stats":{}}
+{"time":"2025-06-08T22:57:25.449633051-07:00","level":"INFO","msg":"stream: closing","id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:25.449652391-07:00","level":"INFO","msg":"handler: closed","stream_id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:25.449659701-07:00","level":"INFO","msg":"writer: Close: closed","stream_id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:25.449709261-07:00","level":"INFO","msg":"sender: closed","stream_id":"v8sz7k7y"}
+{"time":"2025-06-08T22:57:25.450810939-07:00","level":"INFO","msg":"stream: closed","id":"v8sz7k7y"}

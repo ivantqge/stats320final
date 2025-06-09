@@ -1,0 +1,33 @@
+Initialized wandb run: basic_ttt_20250608_225755
+Output directory: ttt_experiments/basic_ttt_20250608_225756
+Neural data loader initialized with 512 features
+Data loader setup with 512 features
+Model setup: TTT_RNN created (will build on first forward pass)
+Starting training...
+Loading neural data...
+Found 24 .mat files
+Loading sentences/t12.2022.04.28_sentences.mat...
+Processing 300 sentences from t12.2022.04.28_sentences.mat
+Successfully processed 262 sentences from t12.2022.04.28_sentences.mat
+Loading sentences/t12.2022.05.05_sentences.mat...
+Processing 380 sentences from t12.2022.05.05_sentences.mat
+Successfully processed 372 sentences from t12.2022.05.05_sentences.mat
+Loaded 634 total sentences from 2 files
+Loaded 634 sentences
+Average sentence length: 128.1 time steps
+Feature range: [0.000, 11204071.000]
+Train: 507 sentences, Val: 127 sentences
+/nlp/scr/ethanhsu/miniconda3/envs/ttt_phoneme_env/lib/python3.9/site-packages/tensorflow/python/data/ops/structured_function.py:256: UserWarning: Even though the `tf.config.experimental_run_functions_eagerly` option is set, this option does not apply to tf.data functions. To force eager execution of tf.data functions, please use `tf.data.experimental.enable_debug_mode()`.
+  warnings.warn(
+Data loading complete!
+Could not count model parameters: Weights for model inner_encoder have not yet been created. Weights are created when the Model is first called on inputs or `build()` is called with an `input_shape`.
+
+Epoch 1/20
+Training...
+Model has 1,982,248 trainable parameters
+  Batch 5: loss=2.1948, grad_norm=35.1686, lr=0.000300
+  Batch 10: loss=1.2420, grad_norm=2.9507, lr=0.000300
+  Batch 15: loss=1.1255, grad_norm=4.2341, lr=0.000300
+  Batch 20: loss=0.9186, grad_norm=0.8341, lr=0.000300
+  Batch 25: loss=1.0598, grad_norm=0.5352, lr=0.000300
+  Batch 30: loss=1.0263, grad_norm=0.6951, lr=0.000299
