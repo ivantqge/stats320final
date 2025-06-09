@@ -5,6 +5,7 @@ import torch
 import torch.nn as nn
 import argparse
 import numpy as np
+import copy
 from tqdm import tqdm
 
 from horse_dataloader import get_horse_dataloaders, get_horse_domain_dataloaders
@@ -239,9 +240,11 @@ def evaluate_model(model, data_loader, criterion, device, ttt_steps=0, ttt_lr=0.
     total_loc_loss = 0
     num_batches = len(data_loader)
     
-    # ttt tracking
+    # Save original model state for resetting after each sample
+    original_state_dict = None
     if ttt_steps > 0:
-        print(f"Test-Time Training enabled: {ttt_steps} steps, LR: {ttt_lr}")
+        print(f"Test-Time Training enabled: {ttt_steps} steps, LR: {ttt_lr} (resetting after each sample)")
+        original_state_dict = copy.deepcopy(model.state_dict())
         total_loss_before_ttt = 0
         total_loss_after_ttt = 0
     
@@ -322,6 +325,11 @@ def evaluate_model(model, data_loader, criterion, device, ttt_steps=0, ttt_lr=0.
         
         # if batch_cts != 0:
         #     print(f"Batch PCK: {batch_scores / batch_cts}")
+        
+        # Reset model to original state after each batch (for non-online TTT)
+        if ttt_steps > 0 and original_state_dict is not None:
+            model.load_state_dict(original_state_dict)
+            model.eval()
        
     
     # averages
