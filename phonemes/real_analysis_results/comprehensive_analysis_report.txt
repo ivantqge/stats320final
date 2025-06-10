@@ -1,0 +1,86 @@
+================================================================================
+TTT-RNN EXPERIMENT ANALYSIS REPORT
+================================================================================
+Experiment: basic_ttt_20250609_020007
+Analysis Date: 2025-06-09 19:47:47
+
+EXPERIMENT CONFIGURATION
+----------------------------------------
+Model Type: TTT_RNN
+Model Units: 256
+Model Layers: 2
+Enhanced TTT: False
+Bidirectional: False
+Dropout: 0.2
+
+TTT CONFIGURATION
+----------------------------------------
+decoder_ln: True
+inner_encoder: mlp_2
+inner_iterations: 2
+inner_lr: 0.01
+sequence_length: 32
+use_sgd: True
+
+DATASET INFORMATION
+----------------------------------------
+Total Sentences: 10,322
+Training Sentences: 8,257
+Validation Sentences: 2,065
+Average Sentence Length: 76.9 time steps
+Sentence Length Range: 19-200 time steps
+Number of Features: 1,280
+Feature Value Range: 0 - 2e+09
+
+MODEL INFORMATION
+----------------------------------------
+Total Parameters: 1,982,248
+Parameter Density: 1548.6 params per input feature
+
+TRAINING CONFIGURATION
+----------------------------------------
+Epochs: 20
+Batch Size: 32
+Initial Learning Rate: 0.0001
+Final Learning Rate: 1e-06
+Learning Rate Schedule: Cosine Decay
+Gradient Clipping: 1.0
+
+PERFORMANCE RESULTS
+----------------------------------------
+Final Training Loss: 0.6803
+Final Training Accuracy: 0.7449 (74.49%)
+Final Validation Loss: 0.7359
+Final Validation Accuracy: 0.7320 (73.20%)
+Best Validation Loss: 0.7354
+Best Validation Accuracy: 0.7343 (73.43%)
+
+TRAINING DYNAMICS
+----------------------------------------
+Total Training Time: 15.02 hours
+Average Epoch Time: 44.34 minutes
+Average Gradient Norm: 1.3114
+Max Gradient Norm: 8.0057
+Gradient Norm Std: 0.8211
+
+OVERFITTING ANALYSIS
+----------------------------------------
+Final Train-Val Accuracy Gap: 0.0129 (1.29%)
+Maximum Train-Val Gap: 0.0194 (1.94%)
+Status: No significant overfitting detected
+
+KEY INSIGHTS
+----------------------------------------
+• Learning rate reduced by 85x during training (cosine schedule)
+• Validation loss improved by 3.4%
+• Validation accuracy improved by 3.1%
+• Batch loss coefficient of variation: 0.126 (lower is more stable)
+• TTT inner iterations: 2 steps per forward pass
+• TTT inner learning rate: 0.01 (vs outer LR ~1e-4)
+
+RECOMMENDATIONS
+----------------------------------------
+• Consider increasing model capacity or training longer
+• Consider reducing learning rate or increasing gradient clipping
+• TTT mechanism appears to be functioning (gradient norms within reasonable range)
+• Consider experimenting with different TTT inner iteration counts

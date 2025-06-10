@@ -1,2 +1,0 @@
-transition_latency_ms,boundary_detection_accuracy,vowel_confidence,consonant_confidence,transition_confidence
-42,89.3,0.74,0.52,0.31
